@@ -4,6 +4,6 @@
   become: true
   become_user: root
   tasks:
-    - apt:
-        name: nginx
+    - dnf:
+        name: wget
       when: ansible_os_family == "RockyLinux"
